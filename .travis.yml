@@ -4,8 +4,6 @@ sudo: true
 
 python:
   - 3.9
-  - 3.10
-  - 3.11
 
 env:
   global:
