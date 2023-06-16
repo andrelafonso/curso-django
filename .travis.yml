@@ -9,6 +9,7 @@ install:
   - pip install --upgrade pipenv
   - pipenv install --dev --clear
   - pipenv install --dev --system --deploy
+  - sudo rm -rf /opt/pyenv
   - curl https://pyenv.run | bash
   - export PATH="/home/travis/.pyenv/bin:$PATH"
   - eval "$(pyenv init -)"
