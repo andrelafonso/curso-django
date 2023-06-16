@@ -1,0 +1,7 @@
+[flake8]
+
+# Limita a quantidade máxima de caracteres por linha
+max-line-length = 120
+
+# Especifica os diretórios a serem analisados
+exclude = .git, __pycache__, docs, .venv, .\.venv
