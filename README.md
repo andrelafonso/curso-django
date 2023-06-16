@@ -1,3 +1,3 @@
 # curso-django
 Código desenvolvido no módulo
-https://app.travis-ci.com/andrelafonso/curso-django.svg?branch=master
+[![Build Status](https://app.travis-ci.com/andrelafonso/curso-django.svg?branch=master)](https://app.travis-ci.com/andrelafonso/curso-django)
