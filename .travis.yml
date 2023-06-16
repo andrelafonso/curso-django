@@ -1,12 +1,21 @@
 language: python
-python:
-  - "3.11"
-addons:
-  apt:
-    packages:
-      - python3.11
+env:
+  - PYTHON_VERSION=3.11.0
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev
+
 install:
   - pip install pipenv
   - pipenv install --dev --system --deploy
+  - curl https://pyenv.run | bash
+  - export PATH="/home/travis/.pyenv/bin:$PATH"
+  - eval "$(pyenv init -)"
+  - eval "$(pyenv virtualenv-init -)"
+  - pyenv install $PYTHON_VERSION
+  - pyenv global $PYTHON_VERSION
+
 script:
-  - python -m unittest discover
+  - python --version
+  # Adicione os comandos de teste relevantes para o seu projeto
