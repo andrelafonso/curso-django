@@ -5,5 +5,5 @@ Trevis:
 
 
 Aplicação disponível em  https://pythonprodjango2023-12cad593e929.herokuapp.com/
-.
-..
+
+Rodar o servidor python manage.py runserver
